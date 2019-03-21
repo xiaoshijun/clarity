@@ -1,0 +1,43 @@
+<div class="main-container">
+    <header class="header-2">
+      <div class="branding">
+          <a class="nav-link">
+              <clr-icon shape="home"  size="24"></clr-icon>
+              <span class="title">Project Clarity</span>
+          </a>
+      </div>
+      <div class="header-nav">
+          <a class="active nav-link nav-text">Home</a>
+      </div>
+  </header>
+    <div class="content-container">
+        <div class="content-area">
+            <h3>Clarity Starter Instructions:</h3>
+            <ul>
+              <li>Start by clicking Fork in the toolbar above.</li>
+              <li>Implement the problem in the new editor.</li>
+              <li>Save the result, and share the url in a GitHub or StackOverflow issue.</li>
+            </ul>
+            <form #form="ngForm" novalidate>
+              <section class="form-block">
+                  <div class="form-group">
+                      <label>With ngForm & ngModel</label>
+                        <div class="toggle-switch">
+                          <input type="checkbox" id="toggle_1" [(ngModel)]="viewGrid">
+                          <label for="toggle_1">Table View</label>
+                      </div>
+                      <clr-checkbox
+                              name="termsCheckbox"
+                              id="checkrads_11"
+                              [(ngModel)]="termsAgreement">
+                          I agree to the terms and conditions.
+                      </clr-checkbox>
+                          Value of termsAgreement: {{termsAgreement}}
+                      <br/>
+                      viewGrid: {{viewGrid}}
+                </div>
+              </section>
+          </form>
+        </div>
+    </div>
+</div>
